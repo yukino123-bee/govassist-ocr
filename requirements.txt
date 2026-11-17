@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-multipart
+rapidfuzz
+opencv-python-headless
+numpy
+Pillow
+deep-translator
