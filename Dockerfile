@@ -4,6 +4,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     tesseract-ocr tesseract-ocr-eng poppler-utils antiword \
     && rm -rf /var/lib/apt/lists/*
 
+ENV OMP_THREAD_LIMIT=1
+
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
